@@ -74,7 +74,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /images/index.jpg
 
 # The banner image of archive page
 archive_img:
@@ -156,12 +156,25 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
-  # Typewriter Effect
+  enable: true
+  # 开启打字效果
   effect: true
+  # 循环输入的句子 (支持多句)
+  typed_option:
+    typeSpeed: 150
+    backSpeed: 80
+    loop: true
+    # 副标题文字大小
+    fontSize: 20px
+  source: false
+  sub:
+    - "你好 我是 Mystic。"
+    - "代码写就写了 别出bug就行"
+
+
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option:
+
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -169,9 +182,10 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: false
+  
+  # source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  # sub:
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -447,10 +461,10 @@ wordcount:
   total_wordcount: true
 
 # Busuanzi count for PV / UV in site
-busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+# busuanzi:
+#   site_uv: true
+#   site_pv: true
+#   page_pv: true
 
 # --------------------------------------
 # Math
@@ -521,7 +535,7 @@ search:
 share:
   # Choose: sharejs / addtoany
   # Leave it empty if you don't need share
-  use: sharejs
+  use:
 
   # Share.js
   # https://github.com/overtrue/share.js
@@ -1069,7 +1083,7 @@ inject:
     - <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
     # 
     - <div class="aplayer no-destroy" data-id="8265222461" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="false"> </div>
-    - <script>(function(){function fixPrismCodeBlocks(){document.querySelectorAll('pre>code[class*="language-"]').forEach(function(code){var pre=code.parentElement;if(!pre||pre.tagName!=='PRE')return;var langClass=null;var langName='Code';Array.from(code.classList).forEach(function(c){if(c.indexOf('language-')===0){langClass=c;langName=c.replace('language-','');}});if(langClass&&!pre.classList.contains(langClass)){pre.classList.add(langClass);}if(!pre.hasAttribute('data-language')){pre.setAttribute('data-language',langName);}if(!pre.classList.contains('line-numbers')){pre.classList.add('line-numbers');}});}function addToolbarToPrism(){var highLight=window.GLOBAL_CONFIG&&window.GLOBAL_CONFIG.highlight;if(!highLight||highLight.plugin!=='prismjs')return;var highlightCopy=highLight.highlightCopy,highlightLang=highLight.highlightLang,highlightMacStyle=highLight.highlightMacStyle;var isShowTool=highlightCopy||highlightLang||highlightMacStyle;var pres=document.querySelectorAll('pre[class*="language-"]:not(figure.highlight pre)');if(!isShowTool||!pres.length)return;pres.forEach(function(pre){if(pre.closest('figure.highlight'))return;var langName=pre.getAttribute('data-language')||'Code';var figure=document.createElement('figure');figure.className='highlight '+pre.className;pre.parentNode.insertBefore(figure,pre);figure.appendChild(pre);var tools=document.createElement('div');tools.className='highlight-tools';if(highlightMacStyle){tools.innerHTML+='<div class="macStyle"><div class="mac-close"></div><div class="mac-minimize"></div><div class="mac-maximize"></div></div>';}if(highlightLang){tools.innerHTML+='<div class="code-lang">'+langName.toUpperCase()+'</div>';}if(highlightCopy){var copyBtn=document.createElement('i');copyBtn.className='fas fa-paste copy-button';copyBtn.title='复制';copyBtn.onclick=function(e){e.stopPropagation();var code=pre.querySelector('code');if(!code)return;var text=code.innerText||code.textContent;navigator.clipboard.writeText(text).then(function(){var notice=document.createElement('div');notice.className='copy-notice';notice.textContent='复制成功';notice.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.8);color:#fff;padding:10px 20px;border-radius:4px;z-index:99999;';document.body.appendChild(notice);setTimeout(function(){notice.remove();},1500);}).catch(function(){alert('复制失败');});};tools.appendChild(copyBtn);}figure.insertBefore(tools,pre);});}function runFix(){fixPrismCodeBlocks();setTimeout(addToolbarToPrism,200);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',runFix);}else{runFix();}if(typeof btf!=='undefined'&&btf.addGlobalFn){btf.addGlobalFn('pjaxComplete',runFix,'fixPrismCode');}})();</script>
+    # - <script>(function(){function fixPrismCodeBlocks(){document.querySelectorAll('pre>code[class*="language-"]').forEach(function(code){var pre=code.parentElement;if(!pre||pre.tagName!=='PRE')return;var langClass=null;var langName='Code';Array.from(code.classList).forEach(function(c){if(c.indexOf('language-')===0){langClass=c;langName=c.replace('language-','');}});if(langClass&&!pre.classList.contains(langClass)){pre.classList.add(langClass);}if(!pre.hasAttribute('data-language')){pre.setAttribute('data-language',langName);}if(!pre.classList.contains('line-numbers')){pre.classList.add('line-numbers');}});}function addToolbarToPrism(){var highLight=window.GLOBAL_CONFIG&&window.GLOBAL_CONFIG.highlight;if(!highLight||highLight.plugin!=='prismjs')return;var highlightCopy=highLight.highlightCopy,highlightLang=highLight.highlightLang,highlightMacStyle=highLight.highlightMacStyle;var isShowTool=highlightCopy||highlightLang||highlightMacStyle;var pres=document.querySelectorAll('pre[class*="language-"]:not(figure.highlight pre)');if(!isShowTool||!pres.length)return;pres.forEach(function(pre){if(pre.closest('figure.highlight'))return;var langName=pre.getAttribute('data-language')||'Code';var figure=document.createElement('figure');figure.className='highlight '+pre.className;pre.parentNode.insertBefore(figure,pre);figure.appendChild(pre);var tools=document.createElement('div');tools.className='highlight-tools';if(highlightMacStyle){tools.innerHTML+='<div class="macStyle"><div class="mac-close"></div><div class="mac-minimize"></div><div class="mac-maximize"></div></div>';}if(highlightLang){tools.innerHTML+='<div class="code-lang">'+langName.toUpperCase()+'</div>';}if(highlightCopy){var copyBtn=document.createElement('i');copyBtn.className='fas fa-paste copy-button';copyBtn.title='复制';copyBtn.onclick=function(e){e.stopPropagation();var code=pre.querySelector('code');if(!code)return;var text=code.innerText||code.textContent;navigator.clipboard.writeText(text).then(function(){var notice=document.createElement('div');notice.className='copy-notice';notice.textContent='复制成功';notice.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.8);color:#fff;padding:10px 20px;border-radius:4px;z-index:99999;';document.body.appendChild(notice);setTimeout(function(){notice.remove();},1500);}).catch(function(){alert('复制失败');});};tools.appendChild(copyBtn);}figure.insertBefore(tools,pre);});}function runFix(){fixPrismCodeBlocks();setTimeout(addToolbarToPrism,200);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',runFix);}else{runFix();}if(typeof btf!=='undefined'&&btf.addGlobalFn){btf.addGlobalFn('pjaxComplete',runFix,'fixPrismCode');}})();</script>
 # Don't modify the following settings unless you know how they work
 CDN:
   # The CDN provider for internal and third-party scripts
@@ -1077,7 +1091,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  third_party_provider: unpkg # 因为 jsdelivr 被墙，所以使用 unpkg
 
   # Add version number to url, true or false
   version: true
