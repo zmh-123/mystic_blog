@@ -35,7 +35,7 @@ menu:
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
   theme: light
-  macStyle: false
+  macStyle: true
   # Code block height limit (unit: px)
   height_limit: false
   word_wrap: false
@@ -1069,6 +1069,7 @@ inject:
     - <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
     # 
     - <div class="aplayer no-destroy" data-id="8265222461" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="false"> </div>
+    - <script>(function(){function fixPrismCodeBlocks(){document.querySelectorAll('pre>code[class*="language-"]').forEach(function(code){var pre=code.parentElement;if(!pre||pre.tagName!=='PRE')return;var langClass=null;var langName='Code';Array.from(code.classList).forEach(function(c){if(c.indexOf('language-')===0){langClass=c;langName=c.replace('language-','');}});if(langClass&&!pre.classList.contains(langClass)){pre.classList.add(langClass);}if(!pre.hasAttribute('data-language')){pre.setAttribute('data-language',langName);}if(!pre.classList.contains('line-numbers')){pre.classList.add('line-numbers');}});}function addToolbarToPrism(){var highLight=window.GLOBAL_CONFIG&&window.GLOBAL_CONFIG.highlight;if(!highLight||highLight.plugin!=='prismjs')return;var highlightCopy=highLight.highlightCopy,highlightLang=highLight.highlightLang,highlightMacStyle=highLight.highlightMacStyle;var isShowTool=highlightCopy||highlightLang||highlightMacStyle;var pres=document.querySelectorAll('pre[class*="language-"]:not(figure.highlight pre)');if(!isShowTool||!pres.length)return;pres.forEach(function(pre){if(pre.closest('figure.highlight'))return;var langName=pre.getAttribute('data-language')||'Code';var figure=document.createElement('figure');figure.className='highlight '+pre.className;pre.parentNode.insertBefore(figure,pre);figure.appendChild(pre);var tools=document.createElement('div');tools.className='highlight-tools';if(highlightMacStyle){tools.innerHTML+='<div class="macStyle"><div class="mac-close"></div><div class="mac-minimize"></div><div class="mac-maximize"></div></div>';}if(highlightLang){tools.innerHTML+='<div class="code-lang">'+langName.toUpperCase()+'</div>';}if(highlightCopy){var copyBtn=document.createElement('i');copyBtn.className='fas fa-paste copy-button';copyBtn.title='复制';copyBtn.onclick=function(e){e.stopPropagation();var code=pre.querySelector('code');if(!code)return;var text=code.innerText||code.textContent;navigator.clipboard.writeText(text).then(function(){var notice=document.createElement('div');notice.className='copy-notice';notice.textContent='复制成功';notice.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.8);color:#fff;padding:10px 20px;border-radius:4px;z-index:99999;';document.body.appendChild(notice);setTimeout(function(){notice.remove();},1500);}).catch(function(){alert('复制失败');});};tools.appendChild(copyBtn);}figure.insertBefore(tools,pre);});}function runFix(){fixPrismCodeBlocks();setTimeout(addToolbarToPrism,200);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',runFix);}else{runFix();}if(typeof btf!=='undefined'&&btf.addGlobalFn){btf.addGlobalFn('pjaxComplete',runFix,'fixPrismCode');}})();</script>
 # Don't modify the following settings unless you know how they work
 CDN:
   # The CDN provider for internal and third-party scripts

@@ -31,27 +31,33 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  field: site
   exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+
+syntax_highlighter: prismjs  # 使用 PrismJS 作为语法高亮引擎
+
 highlight:
+  enable: false        # 关闭 highlight.js，避免与 PrismJS 冲突
   line_number: true
+  line_threshold: 0
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
+
 prismjs:
-  preprocess: true
+  enable: true       # 开启 PrismJS
+  preprocess: false   # 必须设为 false，让主题在前端加载 Prism 的 JS 和 CSS
   line_number: true
   tab_replace: ''
 
