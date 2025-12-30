@@ -165,7 +165,7 @@ subtitle:
     backSpeed: 80
     loop: true
     # 副标题文字大小
-    fontSize: 15px
+    fontSize: 10px
   source: false
   sub:
     - "你好 我是 Mystic"
