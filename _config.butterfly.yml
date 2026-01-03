@@ -87,7 +87,7 @@ tag_img: /images/index.jpg
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img: /images/index.jpg
+tag_per_img:
   - 碎碎念: /images/index.jpg
 
 # Note: category page, not categories page
