@@ -1,18 +1,15 @@
 ---
-title: c++八股
-date: 2026-1-3 20:45:00
-tags: [求职]
-categories: [面试]
-cover: /images/index.jpg 
-description: "c++相关八股"
-
+title: 面试C++八股
+date: 2026-01-03 14:36:41
+tags: [求职, C++]
+cover: /images/bg.png
 ---
 
 <p align="center">
   <img src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 </p>
 
-
+# 面试八股
 
 ## 1.C++相关
 
@@ -30,11 +27,8 @@ description: "c++相关八股"
 
 **用法：**
 
-
-
 ```c++
 // 定义一个名为 "Math" 的命名空间
-
 namespace Math {
     const double PI = 3.14159;
     
@@ -72,7 +66,7 @@ int main() {
 
 一个带标签的盒子
 
-```
+```cpp
 数据类型 变量名 [= 初始值];
 ```
 
