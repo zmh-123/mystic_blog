@@ -461,10 +461,10 @@ wordcount:
   total_wordcount: true
 
 # Busuanzi count for PV / UV in site
-# busuanzi:
-#   site_uv: true
-#   site_pv: true
-#   page_pv: true
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # --------------------------------------
 # Math
