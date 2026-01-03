@@ -1,20 +1,18 @@
-\---
+---
+title: 你好，我是 Mystic
+date: 2025-12-29 20:45:00
+tags: [求职]
+categories: [面试]
+cover: /images/bg.png 
+description: "cpp相关八股"
 
-title: 面试C++八股
-
-date: 2026-01-03 14:36:41
-
-tags: [求职, C++]
-
-cover: /images/bg.png
-
-\---
+---
 
 <p align="center">
-
   <img src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-
 </p>
+
+
 
 # 面试八股
 
