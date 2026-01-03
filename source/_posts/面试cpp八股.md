@@ -27,7 +27,7 @@ cover: /images/bg.png
 
 **用法：**
 
-```c++
+```cpp
 // 定义一个名为 "Math" 的命名空间
 namespace Math {
     const double PI = 3.14159;
@@ -150,7 +150,7 @@ int main() {
 
 **作用：** 处理与类相关但不依赖于特定对象数据的任务。
 
-```c++
+```cpp
 class MyClass {
 public:
     static int staticVar;
@@ -353,7 +353,7 @@ int main() {
 
    `std::forward` 是一个条件转换，只有当参数原本是右值引用时，才会将其转换为右值。
 
-```c++
+```cpp
 #include <iostream>
 #include <utility> // 包含std::forward
 
@@ -401,7 +401,7 @@ int main() {
 - **移动语义**: 将资源（如动态内存）从一个对象“窃取”到另一个对象，避免昂贵的拷贝。
 - **`std::move`**: 将左值强制转换为右值引用，表示“我不再需要这个对象了”。
 
-```c++
+```cpp
 class MyString {
 private:
     char* m_data;
@@ -443,7 +443,7 @@ int main() {
 
 独占所有权的智能指针，不能拷贝，只能移动。轻量高效，是默认首选。
 
-```c++
+```cpp
 #include <memory>
 {
     std::unique_ptr<int> ptr(new int(10));
@@ -505,7 +505,7 @@ int main() {
 
 - 引用计数本质是 “共享该内存的 `shared_ptr` 数量”。
 
-```c++
+```cpp
 {
     std::shared_ptr<int> ptr1 = std::make_shared<int>(20); // 推荐 make_shared
     {
@@ -527,7 +527,7 @@ int main() {
 
 配合 `std::shared_ptr` 使用，解决循环引用问题。它不增加引用计数。
 
-```c++
+```cpp
 #include <memory>
 class 人类;
 
@@ -606,7 +606,7 @@ public:
 
 创建匿名函数对象，极大方便了 STL 算法的使用。优势就是非常简洁
 
-```c++
+```cpp
 [capture-list](parameters) -> return-type { function-body }
 捕获列表 参数类型 返回类型 函数体
     
@@ -763,7 +763,7 @@ int main() {
 
 函数模板是一个**蓝图或公式**，用于生成针对特定类型的函数。它允许我们编写一次代码，然后用于多种数据类型，而不需要为每种类型都重写函数。
 
-```c++
+```cpp
 // 定义一个函数模板
 template <typename T>  // 或者 template <class T>
 T max(T a, T b) {
@@ -799,7 +799,7 @@ int main() {
 
 懒汉式：
 
-```c++
+```cpp
 class Singleton {
 private:
     Singleton() {} // 私有构造函数
@@ -873,7 +873,7 @@ EagerSingleton EagerSingleton::instance;
 
 **简单工厂：**
 
-```c++
+```cpp
 #include <iostream>
 #include <memory>
 
@@ -932,7 +932,7 @@ int main() {
 
 **工厂方法模式：**
 
-```c++
+```cpp
 #include <iostream>
 #include <memory>
 
@@ -1013,7 +1013,7 @@ int main() {
 
 "举个例子，考虑这样一个结构体：
 
-```c++
+```cpp
 struct Example {
     char a;      // 1字节
     int b;       // 4字节  
@@ -1270,7 +1270,7 @@ int* ip = reinterpret_cast<int*>(address);
 
 一个返回类型为指针的函数，应该返回&变量
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
