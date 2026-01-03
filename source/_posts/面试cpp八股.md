@@ -2,7 +2,9 @@
 title: 面试C++八股
 date: 2026-01-03 14:36:41
 tags: [求职, C++]
-cover: /images/bg.png
+categories: [面试]
+cover: /images/nopeople.png
+description: "c++八股"
 ---
 
 <p align="center">
