@@ -1091,7 +1091,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: unpkg # 因为 jsdelivr 被墙，所以使用 unpkg
+  third_party_provider: unpkg # 使用 cdnjs 作为第三方资源提供商
 
   # Add version number to url, true or false
   version: true
@@ -1125,7 +1125,7 @@ CDN:
     # fancybox:
     # fancybox_css:
     # fireworks:
-    # fontawesome:
+    fontawesome:
     # gitalk:
     # gitalk_css:
     # giscus:
