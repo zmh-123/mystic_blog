@@ -1,10 +1,10 @@
 ---
 title: c++八股
-date: 2025-12-29 20:45:00
+date: 2026-1-3 20:45:00
 tags: [求职]
 categories: [面试]
-cover: /images/index.png 
-description: "cpp相关八股"
+cover: /images/index.jpg 
+description: "c++相关八股"
 
 ---
 
@@ -30,8 +30,11 @@ description: "cpp相关八股"
 
 **用法：**
 
+
+
 ```c++
 // 定义一个名为 "Math" 的命名空间
+
 namespace Math {
     const double PI = 3.14159;
     
