@@ -1,17 +1,13 @@
 ---
-title: 你好，我是 Mystic
-date: 2025-12-29 20:45:00
-tags: [求职，C++]
-categories: [面试]
-cover: /images/bg.png 
-
+title: 面试C++八股
+date: 2026-01-03 14:36:41
+tags: [求职, C++]
+cover: /images/bg.png
 ---
 
 <p align="center">
   <img src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 </p>
-
-
 
 # 面试八股
 
@@ -813,8 +809,8 @@ public:
     static Singleton& getInstance() {
         static Singleton instance;
         // 当第一次调用 getInstance() 时，instance 被初始化。
-		// 后续所有调用都直接返回这个已初始化好的实例。
-		// 在程序结束时，实例会自动销毁。
+        // 后续所有调用都直接返回这个已初始化好的实例。
+        // 在程序结束时，实例会自动销毁。
         return instance;
     }
     
