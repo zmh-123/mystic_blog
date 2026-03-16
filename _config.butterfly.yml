@@ -61,7 +61,7 @@ social:
 # --------------------------------------
 # Image Settings
 # --------------------------------------
-
+# 以下这些分别是
 favicon: /img/favicon.png
 
 avatar:
@@ -71,8 +71,9 @@ avatar:
 # Disable all banner images
 disable_top_img: false
 
+# 这里是如果页面没有设置banner图片，就会显示默认的banner图片
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /images/index.jpg
 
 # The banner image of index page
 index_img: /images/index.jpg
@@ -99,11 +100,11 @@ category_img: /images/index.jpg
 category_per_img: /images/index.jpg
 
 # The background image of footer
-footer_img: false
+footer_img: /images/index.jpg
 
 # Website Background
 # Can set it to color or image url
-background:
+background: /images/index.jpg
 
 cover:
   # Disable the cover or not
@@ -1082,6 +1083,22 @@ inject:
   head:
     - <meta name="referrer" content="no-referrer-when-downgrade">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    - |
+      <style>
+      /* 背景图优化 */
+      #web_bg {
+        background-image: url('/images/index.jpg') !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      /* 内容区域半透明背景，提升可读性 */
+      #content-inner,
+      .layout {
+        background-color: rgba(255, 255, 255, 0.92);
+      }
+      </style>
   bottom:
     - <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
