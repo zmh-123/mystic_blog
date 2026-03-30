@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>无线表格识别 | Mysitc</title><meta name="author" content="Mystic"><meta name="copyright" content="Mystic"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="利用qwen模型实现无线表格识别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="无线表格识别">
+<meta property="og:url" content="http://example.com/2026/01/03/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/index.html">
+<meta property="og:site_name" content="Mysitc">
+<meta property="og:description" content="利用qwen模型实现无线表格识别">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/picture2.png">
+<meta property="article:published_time" content="2026-01-03T16:02:57.000Z">
+<meta property="article:modified_time" content="2026-03-30T11:47:45.735Z">
+<meta property="article:author" content="Mystic">
+<meta property="article:tag" content="qwen">
+<meta property="article:tag" content="无线表格识别">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/picture2.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "无线表格识别",
+  "url": "http://example.com/2026/01/03/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/",
+  "image": "http://example.com/images/picture2.png",
+  "datePublished": "2026-01-03T16:02:57.000Z",
+  "dateModified": "2026-03-30T11:47:45.735Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mystic",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/01/03/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/index.html"><link rel="preconnect" href="//unpkg.com"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '无线表格识别',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="referrer" content="no-referrer-when-downgrade"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><style>
+/* 背景图优化 */
+#web_bg {
+  background-image: url('/images/index.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* 内容区域半透明背景，提升可读性 */
+#content-inner,
+.layout {
+  background-color: rgba(255, 255, 255, 0);
+}
+</style>
+<meta name="generator" content="Hexo 8.1.1"></head><body><div id="web_bg" style="background-image: url(/images/index.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/picture2.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Mysitc</span></a><a class="nav-page-title" href="/"><span class="site-name">无线表格识别</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">无线表格识别</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-03T16:02:57.000Z" title="发表于 2026-01-03 16:02:57">2026-01-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-30T11:47:45.735Z" title="更新于 2026-03-30 11:47:45">2026-03-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B0%8F%E7%8E%A9%E5%85%B7/">小玩具</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;本文已发布&quot;,&quot;messageNext&quot;:&quot;天，内容可能已过时，请谨慎参考&quot;,&quot;postUpdate&quot;:&quot;2026-03-30 11:47:45&quot;}" hidden></div><p align="center">
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+</p>
+
+<h1 id="无线表格识别系统（基于qwen）"><a href="#无线表格识别系统（基于qwen）" class="headerlink" title="无线表格识别系统（基于qwen）"></a>无线表格识别系统（基于qwen）</h1><h2 id="写在之前"><a href="#写在之前" class="headerlink" title="写在之前"></a>写在之前</h2><p>前两天帮女朋友整理一些底物，就是将一些手写的数据手动输入到Excel中，整理的过程不免繁琐，刚好最近也不是很忙，想着能不能找个项目部署下来用程序完成这些操作。</p>
+<p>放在以前我可能会翻很多博客最后也是以失败告终，不过前几天听了trae的一个宣传（虽然没有当时还没有solo的名额），所以就想着用trae来完成这么一个项目，从写需求到选技术栈再到项目动起来其实也就不到一个晚上的时间，AI的快速发展越来越让我瞠目结舌了。</p>
+<h2 id="实际需求"><a href="#实际需求" class="headerlink" title="实际需求"></a>实际需求</h2><p>这个项目的诞生源于一个实际需求：在化学实验数据处理中，经常需要识别底物和CAS号信息并快速写入Excel。传统的表格识别工具对无线表格的识别效果并不理想，而国外的大模型服务又存在访问限制和成本问题。于是，我决定利用国产大模型的优势，开发一个专门用于无线表格识别的工具。</p>
+<h2 id="技术架构"><a href="#技术架构" class="headerlink" title="技术架构"></a>技术架构</h2><h3 id="核心流程"><a href="#核心流程" class="headerlink" title="核心流程"></a>核心流程</h3><p>整个系统的处理流程非常清晰：</p>
+<pre class="line-numbers language-none" data-start="1"><code class="language-none">图片输入 → 预处理 → 国产模型识别 → 数据解析 → Excel输出</code></pre>
+
+<h3 id="技术栈选择"><a href="#技术栈选择" class="headerlink" title="技术栈选择"></a>技术栈选择</h3><ul>
+<li><strong>编程语言</strong>: Python 3.8+</li>
+<li><strong>图像处理</strong>: Pillow + OpenCV</li>
+<li><strong>表格生成</strong>: OpenPyXL</li>
+<li><strong>国产大模型</strong>: 通义千问（DashScope）</li>
+<li><strong>界面框架</strong>: Tkinter（Python内置GUI库）</li>
+</ul>
+<h3 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h3><ol>
+<li><p><strong>模块化设计</strong>: 系统分为四个核心模块</p>
+<ul>
+<li><code>ImageProcessor</code>: 负责图像预处理和优化</li>
+<li><code>TableRecognizer</code>: 集成多个国产大模型API</li>
+<li><code>ExcelGenerator</code>: 生成标准的Excel文件</li>
+<li><code>Utils</code>: 工具函数和错误处理</li>
+</ul>
+</li>
+<li><p><strong>多模型支持</strong>: 同时支持三大国产大模型，用户可根据需求选择</p>
+</li>
+<li><p><strong>双模式操作</strong>: 提供图形界面和命令行两种使用方式</p>
+</li>
+</ol>
+<h2 id="核心功能实现"><a href="#核心功能实现" class="headerlink" title="核心功能实现"></a>核心功能实现</h2><h3 id="1-智能图像预处理"><a href="#1-智能图像预处理" class="headerlink" title="1. 智能图像预处理"></a>1. 智能图像预处理</h3><pre class="line-numbers language-python" data-language="python" data-start="1"><code class="language-python">class ImageProcessor:
+    def process_image(self, image_path: str) -&gt; Image.Image:
+        &quot;&quot;&quot;图像预处理，提升识别准确率&quot;&quot;&quot;
+        # 读取图片
+        image &#x3D; Image.open(image_path)
+        
+        # 转换为RGB模式（处理透明背景）
+        if image.mode !&#x3D; &#39;RGB&#39;:
+            image &#x3D; image.convert(&#39;RGB&#39;)
+        
+        # 图像增强处理
+        # - 对比度增强
+        # - 锐化处理
+        # - 噪声去除
+        
+        return enhanced_image</code></pre>
+
+<p>预处理步骤包括格式转换、对比度增强、锐化处理等，确保输入模型的图像质量最佳。</p>
+<h3 id="2-多模型集成策略"><a href="#2-多模型集成策略" class="headerlink" title="2. 多模型集成策略"></a>2. 多模型集成策略</h3><p>系统集成了三大国产大模型（我用的qwen，不过效果差强人意就是了）：</p>
+<pre class="line-numbers language-python" data-language="python" data-start="1"><code class="language-python">def recognize_with_dashscope(self, image: Image.Image) -&gt; Dict[str, Any]:
+    &quot;&quot;&quot;通义千问表格识别&quot;&quot;&quot;
+    messages &#x3D; [
+        &#123;
+            &quot;role&quot;: &quot;user&quot;, 
+            &quot;content&quot;: [
+                &#123;&quot;image&quot;: base64_image&#125;,
+                &#123;&quot;text&quot;: &quot;请识别图片中的表格数据，以JSON格式返回&quot;&#125;
+            ]
+        &#125;
+    ]
+    
+    response &#x3D; MultiModalConversation.call(
+        model&#x3D;&#39;qwen-vl-plus&#39;,
+        messages&#x3D;messages
+    )
+    
+    return self.parse_model_response(response)</code></pre>
+
+<h3 id="3-智能数据解析"><a href="#3-智能数据解析" class="headerlink" title="3. 智能数据解析"></a>3. 智能数据解析</h3><p>大模型返回的数据格式可能不一致，系统需要智能解析：</p>
+<pre class="line-numbers language-python" data-language="python" data-start="1"><code class="language-python">def parse_table_data(self, raw_result: Dict[str, Any]) -&gt; List[List[str]]:
+    &quot;&quot;&quot;解析模型返回的原始数据&quot;&quot;&quot;
+    try:
+        # 尝试多种可能的JSON结构
+        if &#39;table&#39; in raw_result:
+            return raw_result[&#39;table&#39;]
+        elif &#39;data&#39; in raw_result:
+            return raw_result[&#39;data&#39;]
+        else:
+            # 尝试直接解析为二维数组
+            return self.extract_2d_array(raw_result)
+    except Exception as e:
+        raise TableRecognitionError(f&quot;数据解析失败: &#123;str(e)&#125;&quot;)</code></pre>
+
+<h3 id="4-Excel文件生成"><a href="#4-Excel文件生成" class="headerlink" title="4. Excel文件生成"></a>4. Excel文件生成</h3><p>将识别结果转换为标准的Excel文件：</p>
+<pre class="line-numbers language-python" data-language="python" data-start="1"><code class="language-python">def generate_excel(self, table_data: List[List[str]]) -&gt; str:
+    &quot;&quot;&quot;生成Excel文件&quot;&quot;&quot;
+    wb &#x3D; Workbook()
+    ws &#x3D; wb.active
+    
+    # 写入表头
+    if table_data:
+        headers &#x3D; table_data[0]
+        for col, header in enumerate(headers, 1):
+            ws.cell(row&#x3D;1, column&#x3D;col, value&#x3D;header)
+            ws.cell(row&#x3D;1, column&#x3D;col).font &#x3D; Font(bold&#x3D;True)
+    
+    # 写入数据
+    for row_idx, row_data in enumerate(table_data[1:], 2):
+        for col_idx, cell_data in enumerate(row_data, 1):
+            ws.cell(row&#x3D;row_idx, column&#x3D;col_idx, value&#x3D;cell_data)
+    
+    # 自动调整列宽
+    self.auto_adjust_column_width(ws)
+    
+    return output_path</code></pre>
+
+<h2 id="用户界面设计"><a href="#用户界面设计" class="headerlink" title="用户界面设计"></a>用户界面设计</h2><p>ui界面其实还满普通的，就是普通的窗口。</p>
+<h3 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h3><p>对于技术用户，提供了功能完整的命令行接口：</p>
+<pre class="line-numbers language-bash" data-language="bash" data-start="1"><code class="language-bash"># 单张图片处理
+python main.py --image table.jpg --model dashscope
+
+# 批量处理
+python main.py --images *.jpg --model ernie
+
+# 启动图形界面
+python main.py --gui</code></pre>
+
+<h2 id="看看效果吧"><a href="#看看效果吧" class="headerlink" title="看看效果吧"></a>看看效果吧</h2><p>&#x2F;&#x2F; 插入images&#x2F;picture2.png<br><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/picture2.png" alt="image-20260103160108477"></p>
+<p>可以看到其实效果一般，不过基本上也实现了这个功能吧。</p>
+<h2 id="开源方面"><a href="#开源方面" class="headerlink" title="开源方面"></a>开源方面</h2><p>其实也就一个小东西，也不是自己写的就没放在GitHub上面，当个小玩具玩玩还可以。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Mystic</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/01/03/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/">http://example.com/2026/01/03/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Mysitc</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB/">无线表格识别</a><a class="post-meta__tags" href="/tags/qwen/">qwen</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/01/10/%E5%88%B7%E9%A2%98%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="刷题小技巧"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/feng.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">刷题小技巧</div></div><div class="info-2"><div class="info-item-1">      在刷题（尤其是 ACM 模式）的过程中，很多时候卡住我们的不是核心算法，而是一些 C++ 的输入输出细节、API 的特殊机制或者容易被忽略的边界条件。本文整理了我在刷题过程中遇到的一些“坑”和常用模板，希望能帮助大家避雷。 一、链表篇1. 增长链表的操作在构建新链表时，容易忘记指针的移动。 &#x2F;&#x2F; 假设 head 为头节点，tail 为尾节点，sum 为计算结果 if (head &#x3D;&#x3D; nullptr) &#123;     head &#x3D; tail &#x3D; new ListNode(sum % 10); &#125; else &#123;     &#x2F;&#x2F; 关键点：先创建节点，再将当前指针的 next 指向它，最后移动 tail 指针     tail-&gt;next &#x3D; new ListNode(sum % 10);     tail &#x3D; tail-&gt;next; &#x2F;&#x2F; 别忘了这一步！将 tail 移动到新节点 &#125;   二、ACM 模式输入...</div></div></div></a><a class="pagination-related" href="/2026/01/03/%E7%BA%A2%E6%9E%AB/" title="红枫"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/hongfeng.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">红枫</div></div><div class="info-2"><div class="info-item-1">      三年前 我来了 来到了这个让我尚未离开就先想念的地方年少时总爱把梦想挂在嘴边 所以对于自己的专业 我从不掩饰甚至逢人便说我以后肯定是一名出色的黑客 可惜面对代码我似乎并没有什么天赋  只能对着电脑屏幕上的stack overflow暗骂一声 吗的 怎么还不对 后来我最终也没有走安全这条路 对于成为一名出色的黑客也只当是青春一句轻飘飘的玩笑罢了。白天 我还是一个蛮有活力的学生 有早八就早起一会儿洗把脸刷刷牙啃个包子然后卡点到教室上课 如果是专业课这节课估计又是只能听懂一半甚至更少 剩下的内容只能课下慢慢琢磨了 我是一个比较容易满足的人 比如上完这节早八没有第二节课 这时候我应该会骑着车子晃到双创 把中午的饭买好 我爱吃菠萝 所以总会买上一盒 留着饭后解腻 午睡醒来 又该准备下午的课了宿舍在北区 但我偏爱去曦园吃饭 每到傍晚五六点钟的时候 我都会骑电动车溜到南区点上一碗重庆小面 加尖椒牛柳或者淀粉肠的那种 或者去民族餐厅吃份盖饭 我爱吃那里的番茄炒蛋和土豆牛肉 记得那边打菜的大叔很好 有时候我自己要吃一份 另外给朋友打包一份他还会跟我说给我留一份 让我一会儿再去打 怕菜凉...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Mystic</div><div class="author-info-description">一个站在海边的人，既享受此刻脚下沙滩的温度，又清楚地看见远方乌云正在缓缓卷来。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zmh-123"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/zmh-123" target="_blank" title="fab fa-github"><i class="Github"></i></a><a class="social-icon" href="mailto:1641003875@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/1529007575" target="_blank" title="fab fa-bilibili"><i class="fas fa-Bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E8%A1%A8%E6%A0%BC%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%9F%BA%E4%BA%8Eqwen%EF%BC%89"><span class="toc-text">无线表格识别系统（基于qwen）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E4%B9%8B%E5%89%8D"><span class="toc-text">写在之前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E9%9C%80%E6%B1%82"><span class="toc-text">实际需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84"><span class="toc-text">技术架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%B5%81%E7%A8%8B"><span class="toc-text">核心流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88%E9%80%89%E6%8B%A9"><span class="toc-text">技术栈选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="toc-text">架构设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0"><span class="toc-text">核心功能实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%99%BA%E8%83%BD%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-text">1. 智能图像预处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%9A%E6%A8%A1%E5%9E%8B%E9%9B%86%E6%88%90%E7%AD%96%E7%95%A5"><span class="toc-text">2. 多模型集成策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%99%BA%E8%83%BD%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90"><span class="toc-text">3. 智能数据解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Excel%E6%96%87%E4%BB%B6%E7%94%9F%E6%88%90"><span class="toc-text">4. Excel文件生成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1"><span class="toc-text">用户界面设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="toc-text">命令行模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9C%8B%E7%9C%8B%E6%95%88%E6%9E%9C%E5%90%A7"><span class="toc-text">看看效果吧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%BA%90%E6%96%B9%E9%9D%A2"><span class="toc-text">开源方面</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/03/30/%E6%88%91%E5%92%8C%E5%9B%9B%E5%AD%A3/" title="我和四季"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/xiaomaidao.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我和四季"/></a><div class="content"><a class="title" href="/2026/03/30/%E6%88%91%E5%92%8C%E5%9B%9B%E5%AD%A3/" title="我和四季">我和四季</a><time datetime="2026-03-30T15:30:28.000Z" title="发表于 2026-03-30 15:30:28">2026-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="数据库学习笔记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/shujuku.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据库学习笔记"/></a><div class="content"><a class="title" href="/2026/01/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="数据库学习笔记">数据库学习笔记</a><time datetime="2026-01-29T15:38:39.000Z" title="发表于 2026-01-29 15:38:39">2026-01-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/18/%E8%AF%86%E7%9B%88%E8%99%9A%E4%B9%8B%E6%9C%89%E6%95%B0/" title="识盈虚之有数"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/shiyingxuzhiyoushu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="识盈虚之有数"/></a><div class="content"><a class="title" href="/2026/01/18/%E8%AF%86%E7%9B%88%E8%99%9A%E4%B9%8B%E6%9C%89%E6%95%B0/" title="识盈虚之有数">识盈虚之有数</a><time datetime="2026-01-18T11:14:38.000Z" title="发表于 2026-01-18 11:14:38">2026-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/16/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Java学习笔记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/tushuguan2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java学习笔记"/></a><div class="content"><a class="title" href="/2026/01/16/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Java学习笔记">Java学习笔记</a><time datetime="2026-01-16T17:01:21.000Z" title="发表于 2026-01-16 17:01:21">2026-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/10/%E5%88%B7%E9%A2%98%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="刷题小技巧"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/feng.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="刷题小技巧"/></a><div class="content"><a class="title" href="/2026/01/10/%E5%88%B7%E9%A2%98%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="刷题小技巧">刷题小技巧</a><time datetime="2026-01-10T14:08:11.000Z" title="发表于 2026-01-10 14:08:11">2026-01-10</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/index.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Mystic</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><script src="https://unpkg.com/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script><script src="https://unpkg.com/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script>(() => {
+  window.Prism = window.Prism || {}
+  window.Prism.manual = true
+
+  const highlightAll = () => {
+    window.Prism.highlightAll()
+  }
+
+  window.addEventListener('load', highlightAll)
+  btf.addGlobalFn('pjaxComplete', highlightAll, 'prismjs')
+  btf.addGlobalFn('encrypt', highlightAll, 'prismjs')
+})()
+</script><script src="https://unpkg.com/prismjs@1.30.0/prism.js"></script><script src="https://unpkg.com/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="aplayer no-destroy" data-id="8265222461" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="false"> </div><canvas class="fireworks" mobile="false"></canvas><script src="https://unpkg.com/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,150,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://unpkg.com/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://unpkg.com/butterfly-extsrc@1.1.6/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://unpkg.com/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://unpkg.com/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="https://cn.vercount.one/js"></script></div></body></html>
