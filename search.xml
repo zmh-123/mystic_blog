@@ -940,25 +940,6 @@ python main.py --gui</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>识盈虚之有数</title>
-    <url>/mystic_blog/2026/01/18/%E8%AF%86%E7%9B%88%E8%99%9A%E4%B9%8B%E6%9C%89%E6%95%B0/</url>
-    <content><![CDATA[<p align="center">
-  <img src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-</p>
-
-<blockquote>
-<p><strong>最近重读了《滕王阁序》，对里面的“兴尽悲来，识盈虚之有数”又有了更深的感受。</strong></p>
-</blockquote>
-<p>每每觉得灵感迸发能洋洋洒洒写出一篇绝世佳作，提笔却又感觉匮乏的文字描述不出来思想上的波涛汹涌</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>红枫</title>
     <url>/mystic_blog/2026/01/03/%E7%BA%A2%E6%9E%AB/</url>
     <content><![CDATA[<p align="center">
@@ -4132,6 +4113,25 @@ int main() &#123;
       <tags>
         <tag>求职</tag>
         <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>识盈虚之有数</title>
+    <url>/mystic_blog/2026/01/18/%E8%AF%86%E7%9B%88%E8%99%9A%E4%B9%8B%E6%9C%89%E6%95%B0/</url>
+    <content><![CDATA[<p align="center">
+  <img src="/images/avatar.jpg" style="width: 130px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+</p>
+
+<blockquote>
+<p><strong>最近重读了《滕王阁序》，对里面的“兴尽悲来，识盈虚之有数”又有了更深的感受。</strong></p>
+</blockquote>
+<p>每每觉得灵感迸发能洋洋洒洒写出一篇绝世佳作，提笔却又感觉匮乏的文字描述不出来思想上的波涛汹涌</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
       </tags>
   </entry>
 </search>
