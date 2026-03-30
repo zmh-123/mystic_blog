@@ -1,19 +1,19 @@
-# 1. Í£Ö¹Èç¹û³öÏÖ´íÎó
+# 1. æ¸…ç†å¹¶é‡æ–°ç”Ÿæˆ
 $ErrorActionPreference = "Stop"
 
-Write-Host " ¿ªÊ¼ÇåÀí¾É»º´æ..." -ForegroundColor Cyan
+Write-Host " å¼€å§‹ç”Ÿæˆåšå®¢..." -ForegroundColor Cyan
 hexo clean
 
-Write-Host " ¿ªÊ¼Éú³É¾²Ì¬ÍøÒ³..." -ForegroundColor Cyan
+Write-Host " å¼€å§‹ç”Ÿæˆé™æ€é¡µé¢..." -ForegroundColor Cyan
 hexo g
 
-Write-Host " ÕıÔÚÌá½»µ½ GitHub..." -ForegroundColor Cyan
+Write-Host " å‡†å¤‡æäº¤åˆ° GitHub..." -ForegroundColor Cyan
 git add .
-# »ñÈ¡µ±Ç°Ê±¼ä×÷ÎªÌá½»±¸×¢
+# è·å–å½“å‰æ—¶é—´ä½œä¸ºæäº¤å¤‡æ³¨
 $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 git commit -m "Site Update: $date"
 
-Write-Host " ÕıÔÚÍÆËÍµ½ÔÆ¶Ë (Vercel »á×Ô¶¯²¶»ñ)..." -ForegroundColor Cyan
+Write-Host " å‡†å¤‡å‘é€åˆ°éƒ¨ç½² (Vercel ä¼šè‡ªåŠ¨éƒ¨ç½²)..." -ForegroundColor Cyan
 git push
 
-Write-Host " ¹§Ï²£¡·¢²¼³É¹¦£¡" -ForegroundColor Green
+Write-Host " æ­å–œï¼Œéƒ¨ç½²æˆåŠŸï¼" -ForegroundColor Green
