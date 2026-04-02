@@ -62,7 +62,7 @@ social:
 # Image Settings
 # --------------------------------------
 # 以下这些分别是
-favicon: /img/avatar.jpg
+favicon: /images/avatar.jpg
 
 avatar:
   img: /images/avatar.jpg
