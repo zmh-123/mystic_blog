@@ -172,8 +172,7 @@ subtitle:
     fontSize: 10px
   source: false
   sub:
-    - "你好 我是 Mystic"
-    - "代码写就写了 别出bug就行"
+    - "何意味是什么意思"
 
 
   # Customize typed.js
